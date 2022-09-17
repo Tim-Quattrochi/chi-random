@@ -14,10 +14,39 @@ body {
   margin-bottom: 5rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin: auto;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #image {
+    height: 200px;
+    object-fit: contain;
+
+    margin: auto;
+  }
+  .para {
+    border-radius: 10px;
+    height: 10rem;
+    background: whitesmoke;
+    text-align: justify;
+    line-height: 40px;
+    margin-bottom: 5rem;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 3000px) {
+  #image {
+    max-width: fit-content;
+
+    margin: auto;
+  }
+  .para {
+    border-radius: 10px;
+    width: 20rem;
+    height: 10rem;
+    background: whitesmoke;
+    text-align: justify;
+    line-height: 40px;
+    margin-bottom: 2rem;
+  }
 }
 
 .chi-text {
@@ -29,8 +58,7 @@ img {
   background: whitesmoke;
   border-radius: 1em;
   text-align: center;
-  display: grid;
-  margin: auto;
+  margin: 5px auto;
   padding: 0.5em;
   height: 40px;
   width: 7rem;

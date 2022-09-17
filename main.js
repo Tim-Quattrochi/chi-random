@@ -14,8 +14,8 @@ function getRandomDog() {
 }
 
 function renderRandomDog() {
-
     container.append(img)
+    img.id = "image"
     getRandomDog()
 
 
