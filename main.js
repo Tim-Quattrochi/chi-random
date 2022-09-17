@@ -14,7 +14,7 @@ function getRandomDog() {
 }
 
 function renderRandomDog() {
-    img.className = "p-1 bg-indigo border rounded max-w-sm max-w-full h-auto"
+
     container.append(img)
     getRandomDog()
 
